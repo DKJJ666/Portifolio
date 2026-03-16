@@ -23,4 +23,24 @@ darkmode.onclick = () => {
     } else {
     darkmode.classList.replace("bx-sun", "bx-moon");
     document.body.classList.remove("active");
-}};
+    }
+};
+
+// Typewriter effect
+const typewriterElement = document.getElementById('typewriter');
+const text = 'Portfólio';
+let index = 0;
+
+function typeWriter() {
+    if (index < text.length) {
+        typewriterElement.innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeWriter, 150); // Velocidade da digitação
+    } else {
+        // Remover o cursor após terminar
+        typewriterElement.classList.add('done');
+    }
+}
+
+// Iniciar a animação quando a página carregar
+window.addEventListener('load', typeWriter);

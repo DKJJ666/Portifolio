@@ -82,7 +82,21 @@ header.shadow {
 .logo span {
   font-size: 1.61rem;
   font-weight: 600;
-  color: crimson;
+  color: rgb(136, 0, 160);
+}
+
+#typewriter::after {
+  content: '|';
+  animation: blink 1s infinite;
+}
+
+#typewriter.done::after {
+  display: none;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
 }
 
 .navbar {
@@ -337,6 +351,66 @@ span {
 
 .services-box:hover a {
   color: #8b8a8f;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.project-box {
+  padding: 20px;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 0.5rem;
+  border-bottom: 2px solid var(--main-color);
+  box-shadow: 0 2px 7px rgb(14 55 54 / 15%);
+  transition: all 0.3s ease;
+}
+
+.project-box:hover {
+  background-color: #02225a;
+  transform: translateY(-5px);
+}
+
+.project-box img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-box h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0.7rem 0 0.4rem;
+  color: var(--text-color);
+}
+
+.project-box:hover h3 {
+  color: #fff;
+}
+
+.project-box p {
+  font-size: var(--p-font);
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.project-box:hover p {
+  color: #fff;
+}
+
+.project-box .btn {
+  margin-top: auto;
 }
 
 .contact-form {
