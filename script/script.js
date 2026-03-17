@@ -12,6 +12,7 @@ menubar.onclick = () => {
 
 menubar.onclick = () => {
     navBar.classList.remove("active");
+    mIcon.classList.toggle("show-links")
 };
 
 let darkmode = document.querySelector("#darkmode");
@@ -35,7 +36,7 @@ function typeWriter() {
     if (index < text.length) {
         typewriterElement.innerHTML += text.charAt(index);
         index++;
-        setTimeout(typeWriter, 150); // Velocidade da digitação
+        setTimeout(typeWriter, 200); // Velocidade da digitação
     } else {
         // Remover o cursor após terminar
         typewriterElement.classList.add('done');
