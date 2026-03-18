@@ -112,21 +112,21 @@ No tempo livre, gosto de jogar basquete, além de fotografar carros e paisagens 
         <div class="bars">
 
             <div class="bars-box">
-                <h3>HTML</h3>
+                <h3><i class='bx bxl-html5 skill-icon'></i>HTML</h3>
                 <span>73%</span>
                 <div class="light-bar"></div>
                 <div class="percent-bar html-bar"></div>
             </div>
 
             <div class="bars-box">
-                <h3>CSS</h3>
+                <h3><i class='bx bxl-css3 skill-icon'></i>CSS</h3>
                 <span>62%</span>
                 <div class="light-bar"></div>
                 <div class="percent-bar css-bar"></div>
             </div>
 
             <div class="bars-box">
-                <h3>JavaScript</h3>
+                <h3><i class='bx bxl-javascript skill-icon'></i>JavaScript</h3>
                 <span>75%</span>
                 <div class="light-bar"></div>
                 <div class="percent-bar js-bar"></div>
@@ -147,7 +147,7 @@ No tempo livre, gosto de jogar basquete, além de fotografar carros e paisagens 
             </div> -->
 
             <div class="bars-box">
-                <h3>Github</h3>
+                <h3><i class='bx bxl-github skill-icon'></i>GitHub</h3>
                 <span>70%</span>
                 <div class="light-bar"></div>
                 <div class="percent-bar git-bar"></div>
@@ -234,11 +234,11 @@ No tempo livre, gosto de jogar basquete, além de fotografar carros e paisagens 
         <span>Que tal mandar uma mensagem?</span>
     </div>
     <div class="contact-form">
-        <form action="">
-            <input type="text" placeholder="Nome">
-            <input type="email" name="" id="" placeholder="Email">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Escreva sua mensagem aqui..."></textarea>
-            <input type="button" value="Enviar" class="contact-button">
+        <form id="contact-form" action="">
+            <input type="text" id="contact-name" name="name" placeholder="Nome" required>
+            <input type="email" id="contact-email" name="email" placeholder="Email" required>
+            <textarea id="contact-message" name="message" cols="30" rows="10" placeholder="Escreva sua mensagem aqui..." required></textarea>
+            <input type="button" id="send-email" value="Enviar" class="contact-button">
         </form>
     </div>
 </section>

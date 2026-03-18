@@ -279,6 +279,24 @@ span {
   font-weight: 500;
 }
 
+.bars-box h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.skill-icon {
+  font-size: 1.2rem;
+  color: var(--main-color);
+}
+
+.bars-box .percent-bar.html-bar .skill-icon,
+.bars-box .percent-bar.css-bar .skill-icon,
+.bars-box .percent-bar.js-bar .skill-icon
+.bars-box .percent-bar.git-bar .skill-icon {
+  color: var(--main-color);
+}
+
 .light-bar {
   position: absolute;
   bottom: 0;
